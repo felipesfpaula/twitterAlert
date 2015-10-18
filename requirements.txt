@@ -1,0 +1,4 @@
+tweepy
+psycopg2
+oauth2
+oauthlib
