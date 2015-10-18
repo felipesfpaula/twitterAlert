@@ -12,7 +12,7 @@ def parsePlace(data):
 
 class DB:
 	def __init__(self):
-		self.conn = psycopg2.connect("dbname=hdmthon user=hdm password=17outubro2015 host=200.132.11.22 port=1305")
+		self.conn = psycopg2.connect("db data")
 		self.cur = self.conn.cursor()
 		self.conn.autocommit = True
 
@@ -55,11 +55,11 @@ class MyStreamListener(tweepy.StreamListener):
 class TwitterHandler:
 
 	def __init__(self,words):
-		consumer_key="JAZRiVjf3vXSeDMZXNdBD7F3x"
-		consumer_secret="RCvY9EPoIfHQ1MudzgFGPFemM5qe80vubKnbDaXZNovkUtMFOG"
+		consumer_key=""
+		consumer_secret=""
 
-		access_token="210847926-pzGf6NsmRXCr04NK32ruwEuM2hZ0Xt2e31Y4fBrq"
-		access_token_secret="aZQ2Mq83xwzaceaoNeKzzXB8t5rbdFlVbaXMhurXZ6d41"
+		access_token=""
+		access_token_secret=""
 
 		auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
 		auth.set_access_token(access_token, access_token_secret)
